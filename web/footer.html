@@ -3,131 +3,55 @@
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>Bootstrap模板页面</title>
-
+		<title>Angel日程管理-主页</title>
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/bootstrap-theme.css">
-		<link rel="stylesheet" href="js/plugins/layui/css/layui.css">
+	
 	</head>
 
 	<body class="">
 
-		<div class="container  red " style="height: 100px;">
-			<div class="blue row  " style="height: 100px;">
-				<div class=" red col-sm-3 flex-center" style="height: 100px;">
-					<h3><img src="img/logo2.png"/></h3>
-				</div>
-				<div class=" red col-sm-6 col-sm-offset-3 flex_y_center menu " style="">
-					
-					<div class="flex-center" style="">
-						<a href="./index.html" class="">首页</a>
-					</div>
-					<div class=" flex-center ">
-						<a href="./timeline.html">时间轴</a>
-					</div>
-					<div class=" flex-center">
-						<a href="./about.html">关于我们</a>
-					</div>	
-					
-					<div class=" red flex-center" style="flex:1;margin-left: 10px;">
-						<button type="button" onclick="link('admin')" class="btn btn-success">进入我的日程</button>
-					</div>
+			<div class="container-fluid blue clearfix" style="color:white;background-color: #363636; height: 150px; margin: 0">
+				<div class="container blue clearfix" style="height:100%">
+				
+				<div class="row flex-center clearfix" style="height:100%" >
+				
+				
+				
+<!--				<div class=" red col-sm-9 flex_x_start" >-->
+<!--					<div class=" red col-sm-8 ">-->
 
-					<!--		<ul class="nav navbar-nav navbar-right">
-						<li class="">
-							 <a href="#">Link</a>
-						</li>
-					</ul>-->
+
+<!--						<ul>-->
+<!--				<li>-->
+<!--					首页-->
+<!--				</li>-->
+<!--				<li>-->
+<!--					时间轴-->
+<!--				</li>-->
+<!--				<li>-->
+<!--					关于我们-->
+<!--				</li>-->
+
+<!--			</ul>-->
+<!--					</div>-->
+<!--					-->
+<!--				</div>-->
+				<div class=" red col-sm-6  flex_x_start">
+					<h3>日程管理----欢迎大家的访问</p></h3>
+
+<div style="text-align: left;color: #6e7681;font-size: xx-small"><a href="https://beian.miit.gov.cn/" target="_blank"><img src="img/icp.png"> 备案号：鄂ICP备2023013884号-1 </a>
+</div>
+				</div>
+				
 				</div>
 			</div>
 		</div>
 		
-		<div class="container-fluid blue" style="border-top: gray solid 2px;height: 2px;">
-		</div>
-		
-		
-		<div class="container blue clearfix" style="margin-top: 50px; margin-bottom: 50px;">
-			<div class="row flex-center clearfix" >
-				
-				
-				
-<dl>
-				<dt>
-					关于这个网站
-				</dt>
-				<dd>
-					这是日程管理系统的展示网站，不需要任何操作，仅仅引导用户进入日程管理系统。
-				</dd>
-				<dt style="margin-top: 30px;">
-					关于这个网站
-				</dt>
-				<dd>
-					我是xxx大学的学生，即将毕业。
-				</dd>
-				<dd>
-					
-				</dd>
-				<dt style="margin-top: 30px;">关于我做这个的目的
-					
-				</dt>
-				<dd>
-					这是我的毕业设计，日程管理系统
-				</dd>
-				<dt style="margin-top: 30px;">
-					网站源码下载
-				</dt>
-				<dd>
-					********
-				</dd>
-					<dt style="margin-top: 30px;">
-					网站服务器
-				</dt>
-				<dd>
-					阿里云服务器 CentOS系统 
-				</dd>
-					<dt style="margin-top: 30px;">
-					个人联系方式
-				</dt>
-				<dd>
-					电话 ******** 邮箱 ********
-				</dd>
-					<dt style="margin-top: 30px;">
-					网站友情链接
-				</dt>
-				<dd>
-					我的留言板系统（有什么事情可以留言）地址：********
-				</dd>
-					<dt style="margin-top: 30px;">
-					我的域名
-				</dt>
-				<dd>
-					********（域名正在备案中，请等候20天之后上线）
-				</dd>
-			</dl>
 
-              
-			</div>
-		</div>
-
-		<footer id="footer"></footer>
-
-		<script>
-
-			
-layui.use(['element', 'layer'], function(){
-  var element = layui.element;
-  var layer = layui.layer;
-  
-  //监听折叠
-  element.on('collapse(test)', function(data){
-    layer.msg('展开状态：'+ data.show);
-  });
-});
-</script>
 
 		<style>
 			body{
-		
 			}
 			*{
 				    font-size: 18px;
@@ -501,17 +425,8 @@ layui.use(['element', 'layer'], function(){
 				padding-right: 20px;
 			}
 		</style>
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.js"></script>
-		<script src="js/plugins/layui/layui.all.js"></script>
-		<script>
-			function link(url){
-				//window.location.href='http://47.106.121.197/'+url;
-			}
-			$(function() {
-				$("#footer").load("footer.html");
-			});
-		</script>
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.js"></script>
 	</body>
 
 </html>

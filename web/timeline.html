@@ -19,7 +19,7 @@
 				<div class=" red col-sm-6 col-sm-offset-3 flex_y_center menu " style="">
 					
 					<div class="flex-center" style="">
-						<a id="atest" href="./home.html" class="">首页</a>
+						<a id="atest" href="./index.html" class="">首页</a>
 					</div>
 					<div class=" flex-center ">
 						<a href="./timeline.html">时间轴</a>
@@ -185,54 +185,10 @@
               
 			</div>
 		</div>
-		
-		
-			<div class="container-fluid blue clearfix" style="color:white;background-color: #363636; height: 150px; margin: 0">
-				<div class="container blue clearfix" style="height:100%">
-				
-				<div class="row flex-center clearfix" style="height:100%" >
-				
-				
-				
-				<div class=" red col-sm-9 flex_x_start" >
-					<div class=" red col-sm-8 ">
-			<!--			<p>网址:a3r.top   版权所有 张亮  </p>
-						<p>服务器地址：47.106.121.197/admin</p>
-						<p>邮箱：110@zbj.com</p>-->
-						
-						<ul>
-				<li>
-					网址:a3r.top   版权所有 张亮
-				</li>
-				<li>
-					服务器地址：47.106.121.197/admin
-				</li>
-				<li>
-					邮箱：110@zbj.com
-				</li>
-				<li>
-					git地址：https://github.com/AngelOver/ScheduleSystem
-				</li>
-			</ul>
-					</div>
-					
-				</div>
-				<div class=" red col-sm-3  flex_x_start">
-					<h3>日程管理</h3>
-					<p>欢迎大家的访问</p>
-					<div style="text-align: left;color: #6e7681;font-size: xx-small"><a href="https://beian.miit.gov.cn/" target="_blank">备案号：鄂ICP备2023013884号 </a>
-</div>
-				</div>
-				
-				</div>
-			</div>
-		</div>
-		<audio controls preload="auto"  style="display:none">  <source src="mp3/2468.wav" type="audio/ogg" ></audio>
-			<script>
-				function link(url){
-			    		window.location.href='http://47.106.121.197/'+url;
-			    }
-		</script>
+
+
+        <footer id="footer"></footer>
+
 
 		<style>
 			body{
@@ -618,60 +574,14 @@
 	<script src="js/jquery.js"></script>
 		<script src="js/bootstrap.js"></script>
 		<script src="js/plugins/layui/layui.all.js"></script>
-		<script>
-			
-			
-			function openLayer(){
-				console.log(new Date());
-				//边缘弹出
-				var _html="";
-				var title ="";
-				var thedate ="";	
-				var range ="";	
-				var address ="";	
-				var remark ="";	
-			
-				_html += '<div style="padding: 20px 80px;" class="reminddiv"> <audio controls preload="auto" autoplay="autoplay" style="display:none">  <source src="mp3/2468.wav" type="audio/ogg" ></audio>';
-				_html +='<p>标题：'+title+'</p>';
-				_html +='<p>日期：'+thedate+' </p>';
-				_html +='<p>时间：'+range+'</p>';
-				if(address!=""){
-				_html +='<p>地址：'+address+'</p>';
-				}
-				if(remark!=""){
-				_html +='<p>备注：'+remark+'</p>';
-				}
-				_html +='</div>';
-
-			var index = layui.layer.open({
-			  type: 1
-			    ,title: '您有一条新提醒'
-			   ,area: ['420px', '320px']
-			  ,offset: 'rb' //具体配置参考：offset参数项
-			  ,content: _html
-			  ,btn: '知道了'
-			  ,btnAlign: 'c' //按钮居中	
-			  ,tipsMore: true
-			  ,shade: 0 //不显示遮罩
-			  ,yes: function(){
-			    layer.close(index);
-			  }
-			  });
-			}
-			
-			setTimeout(function(){
-				//openLayer();
-			},5000);
-			
-			var timestamp = Date.parse(new Date());
-			console.log(timestamp);
-			
-			
-			
-			$(function(){
-			})
-			
-		</script>
+        <script>
+            function link(url){
+                //window.location.href='http://47.106.121.197/'+url;
+            }
+            $(function() {
+                $("#footer").load("footer.html");
+            });
+        </script>
 	</body>
 
 </html>
